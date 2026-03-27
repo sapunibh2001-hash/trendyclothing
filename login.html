@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        /* The most simple CSS for a whole background and a center box */
+        body {
+            background-color: #f0f2f5; /* Light grey background for the whole page */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <form onsubmit="alert('Logged In!'); window.location.href='index.html'; return false;">
+        <h2>Login</h2>
+        
+        Username: <br>
+        <input type="text" required> 
+        <br>
+        
+        Password: <br>
+        <input type="password" required> 
+        <br>
+        
+        <input type="submit" value="Login" style="background: #333; color: white; cursor: pointer;">
+        <br>
+        <a href="index.html" style="font-size: 12px; color: #666;">Back to Home</a>
+    </form>
+
+</body>
+</html>

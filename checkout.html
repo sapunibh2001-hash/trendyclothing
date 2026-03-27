@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Trendify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: sans-serif; margin: 40px;">
+
+    <h1>Finalize Your Order</h1>
+    <form onsubmit="alert('Order Placed Successfully!'); return false;" style="max-width: 500px;">
+        
+        <label>Full Name:</label><br>
+        <input type="text" style="width: 100%;" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" style="width: 100%;" required><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="number" style="width: 100%;" required><br><br>
+
+        <label>Delivery Address:</label><br>
+        <textarea rows="4" style="width: 100%;" required></textarea><br><br>
+
+        <label>Payment Method:</label><br>
+        <input type="radio" name="pay" value="cash" checked> Cash on Delivery<br>
+        <input type="radio" name="pay" value="card"> Card Payment<br><br>
+
+        <input type="checkbox" required> I agree to the terms and conditions.<br><br>
+
+        <button type="submit" style="background: green; color: white; padding: 10px 20px; cursor: pointer;">Place My Order</button>
+    </form>
+
+</body>
+</html>
